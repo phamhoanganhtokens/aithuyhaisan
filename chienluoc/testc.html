@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Chiến lược AI Thuỷ Hải Sản | Phạm Hoàng Anh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Times New Roman', Georgia, serif; }
+        .justified { text-align: justify; }
+        .nav-link:hover { color: #006D77; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background-color: #002147; color: white; padding: 12px; }
+        td { padding: 12px; border-bottom: 1px solid #ddd; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .gradient-overlay { background: linear-gradient(rgba(0,33,71,0.7), rgba(0,109,119,0.7)); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 leading-relaxed">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur shadow-sm py-4 px-6 flex justify-between items-center">
+        <span class="font-bold text-xl text-[#002147]">AI THUỶ HẢI SẢN</span>
+        <div id="progress-bar" class="h-1 bg-[#006D77] absolute bottom-0 left-0 transition-all duration-300" style="width: 0%"></div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="h-screen relative flex items-center justify-center text-white p-6 overflow-hidden bg-[#002147]">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542273917363-3b1817f69a5d?q=80&w=2070')] bg-cover bg-center opacity-40"></div>
+        <div class="relative z-10 max-w-4xl text-center">
+            <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">Báo cáo Chiến lược AI Thuỷ Hải Sản</h1>
+            <p class="text-xl opacity-90 mb-8">Chiến lược phát triển bền vững và chuyển đổi số 2030</p>
+            <div class="border-t border-white/30 pt-6">
+                <p class="text-lg font-bold">Chuyên gia chiến lược: Phạm Hoàng Anh</p>
+                <p class="italic text-sm mt-2" id="current-date"></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Executive Summary -->
+    <section class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-[#002147] mb-8 border-l-4 border-[#006D77] pl-4">Tóm tắt Điều hành</h2>
+        <p class="justified text-lg leading-loose">
+            Bản báo cáo này tổng hợp các góc nhìn chuyên môn từ Chiến lược, Logistics, Thị trường, Tài chính, Rủi ro và Công nghệ AI nhằm xây dựng lộ trình đưa Công ty trở thành một trong 10 doanh nghiệp xuất khẩu thủy sản hàng đầu miền Trung vào năm 2030. Chúng tôi cam kết chuyển đổi từ khai thác truyền thống sang chuỗi giá trị tích hợp dọc với trọng tâm là "Thủy sản bền vững - Nguồn gốc minh bạch".
+        </p>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="max-w-4xl mx-auto px-6 space-y-20 mb-20">
+        
+        <!-- SWOT Analysis -->
+        <section>
+            <h2 class="text-3xl font-bold text-[#002147] mb-8">Phân tích SWOT</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 bg-white shadow border-l-4 border-green-600"><h3>Điểm mạnh: Thương hiệu vùng, hạ tầng.</h3></div>
+                <div class="p-6 bg-white shadow border-l-4 border-blue-600"><h3>Điểm yếu: Công nghệ lạc hậu, quy trình cũ.</h3></div>
+                <div class="p-6 bg-white shadow border-l-4 border-yellow-600"><h3>Cơ hội: Thị trường xuất khẩu, AI hóa.</h3></div>
+                <div class="p-6 bg-white shadow border-l-4 border-red-600"><h3>Thách thức: Thẻ vàng EC, biến động giá.</h3></div>
+            </div>
+        </section>
+
+        <!-- Solutions -->
+        <section>
+            <h2 class="text-3xl font-bold text-[#002147] mb-8">Giải pháp Công nghệ AI</h2>
+            <div class="space-y-4">
+                <div class="p-4 bg-white border border-slate-200">
+                    <h4 class="font-bold text-[#006D77]">1. AI giọng nói (Voice AI):</h4>
+                    <p class="justified">Hỗ trợ ngư dân ghi chép nhật ký khai thác bằng giọng nói, tối ưu hóa thao tác.</p>
+                </div>
+                <div class="p-4 bg-white border border-slate-200">
+                    <h4 class="font-bold text-[#006D77]">2. Thị giác máy tính (Computer Vision):</h4>
+                    <p class="justified">Tự động phân loại kích cỡ và chất lượng hàng hóa tại nhà máy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finance Table -->
+        <section>
+            <h2 class="text-3xl font-bold text-[#002147] mb-8">Kế hoạch Tài chính (80 Tỷ VNĐ)</h2>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>Trụ cột</th><th>Tỷ lệ</th><th>Mục tiêu</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Nâng cấp đội tàu</td><td>30%</td><td>Hậu cần</td></tr>
+                        <tr><td>Nhà máy</td><td>25%</td><td>Hiện đại hóa</td></tr>
+                        <tr><td>Hạ tầng số</td><td>20%</td><td>IUU compliance</td></tr>
+                        <tr><td>Đào tạo</td><td>25%</td><td>Chứng chỉ quốc tế</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#002147] text-white py-12 px-6 text-center">
+        <p class="mb-4">Liên hệ chi tiết: <a href="www.phamhoanganhtokens.com" target="_blank" class="underline">www.phamhoanganhtokens.com</a></p>
+        <button class="bg-[#006D77] hover:bg-[#005a63] text-white px-8 py-3 rounded-full transition-all">TẢI BÁO CÁO TOÀN VĂN</button>
+        <div class="mt-8 opacity-50 text-sm italic">Master Agent Badge: AI-STRATEGY-2030-VERIFIED</div>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').innerText = new Date().toLocaleDateString('vi-VN');
+        window.onscroll = () => {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById('progress-bar').style.width = (winScroll / height) * 100 + "%";
+        };
+    </script>
+</body>
+</html>
