@@ -3,191 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Báo cáo Chiến lược AI Thuỷ Hải Sản | Strategic Report</title>
+    <title>AI Trade Pro™ | Institutional Analysis Report</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#002366',
+                        success: '#064e3b',
+                        alert: '#991b1b',
+                        offwhite: '#F8F9FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Times New Roman', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Times+New+Roman&display=swap');
-        
-        body {
-            font-family: 'Times New Roman', Georgia, serif;
-            color: #334155;
-            line-height: 1.8;
-        }
-        .text-justify { text-align: justify; }
-        .navy-bg { background-color: #002147; }
-        .teal-text { color: #006D77; }
-        .navy-text { color: #002147; }
-        .section-padding { padding: 4rem 0; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        
-        /* Progress Indicator */
-        #progress-bar {
-            height: 4px;
-            background: #006D77;
-            width: 0%;
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-        }
+        body { background-color: #ffffff; color: #1a1a1a; }
+        .report-section { margin-bottom: 2.5rem; }
+        .body-text { font-family: 'Times New Roman', serif; text-align: justify; line-height: 1.6; }
+        .header-title { font-family: 'Inter', sans-serif; letter-spacing: -0.02em; }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        th { background-color: #002366; color: white; padding: 0.75rem; text-align: left; }
+        td { border-bottom: 1px solid #e5e7eb; padding: 0.75rem; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="p-4 md:p-12 lg:px-24">
 
-    <div id="progress-bar"></div>
-
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-bold text-xl navy-text">AI THUỶ HẢI SẢN</span>
-            <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-semibold">
-                <a href="#summary" class="hover:text-[#006D77] transition">Tóm tắt</a>
-                <a href="#solutions" class="hover:text-[#006D77] transition">Giải pháp</a>
-                <a href="#financial" class="hover:text-[#006D77] transition">Tài chính</a>
+    <!-- Header Section -->
+    <header class="border-b-2 border-navy pb-8 mb-12">
+        <div class="flex flex-col md:flex-row md:justify-between items-start md:items-end">
+            <div>
+                <h1 class="header-title text-2xl md:text-3xl font-bold text-navy uppercase">AI Trade Pro™ Institutional Analysis Report</h1>
+                <p class="text-sm text-gray-600 mt-2 font-sans italic">Master AI Agent: Phạm Hoàng Anh | www.phamhoanganhtokens.com</p>
+            </div>
+            <div class="text-right mt-4 md:mt-0 font-sans">
+                <p class="font-bold text-navy">Dự án: Khai Thác Kinh Tế Biển & Thủy Sản Việt Nam</p>
+                <p class="text-gray-500 text-sm">Ngày báo cáo: 12/06/2026</p>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="h-screen flex items-center justify-center text-center navy-bg text-white px-6">
-        <div>
-            <h1 class="text-5xl md:text-7xl mb-6">Báo cáo Chiến lược<br>AI Thuỷ Hải Sản</h1>
-            <p class="text-xl italic mb-10 text-gray-300">Xây dựng chuỗi giá trị bền vững cho ngư dân Bình Định</p>
-            <div class="border-t border-gray-600 pt-6">
-                <p class="text-lg">Lead Strategist: <strong>Phạm Hoàng Anh</strong></p>
-                <p class="text-sm opacity-70 mt-2">Ngày: 12 Tháng 06, 2026</p>
-            </div>
-        </div>
-    </section>
-
-    <main class="max-w-4xl mx-auto px-6 py-12">
-
-        <!-- Executive Summary -->
-        <section id="summary" class="section-padding">
-            <h2 class="text-4xl mb-8 navy-text border-b-2 border-[#006D77] inline-block pb-2">Tóm tắt Điều hành</h2>
-            <p class="text-justify text-lg leading-loose">
-                Báo cáo này trình bày lộ trình chuyển đổi số toàn diện cho HTX ngư dân Bình Định, tập trung vào việc ứng dụng trí tuệ nhân tạo (AI) và công nghệ bảo quản hiện đại để nâng cao giá trị chuỗi cung ứng. Bằng cách tích hợp dữ liệu vệ tinh, nhật ký điện tử và các giải pháp logistic tối ưu, chúng tôi hướng tới việc cắt giảm 30% chi phí vận hành và tăng biên lợi nhuận đáng kể cho các ngư dân địa phương.
-            </p>
+    <main class="max-w-4xl mx-auto">
+        <!-- Section 0 -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">0. THU THẬP DỮ LIỆU (DATA COLLECTION)</h2>
+            <p class="body-text">Báo cáo được tổng hợp dựa trên dữ liệu ngành thủy sản giai đoạn 2025-2026, các báo cáo phân tích thị trường quốc tế (EU, Mỹ, Trung Quốc) và dữ liệu thực địa tại hai địa bàn trọng điểm: Cà Mau và Bạc Liêu. Phương pháp tiếp cận bao gồm phân tích định lượng (dữ liệu xuất khẩu, diện tích nuôi trồng, tỷ lệ FCR) và định tính (rào cản phi thuế quan, xu hướng ESG).</p>
         </section>
 
-        <!-- SWOT Analysis -->
-        <section class="section-padding">
-            <h2 class="text-3xl mb-8 navy-text">Phân tích SWOT</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="p-6 bg-white shadow-sm border-l-4 border-green-600">
-                    <h3 class="text-xl font-bold mb-2">Điểm mạnh</h3>
-                    <p class="text-justify">Liên kết tàu thuyền chặt chẽ, ngư dân giàu kinh nghiệm, nắm bắt địa thế vùng biển miền Trung.</p>
+        <!-- Section I -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">I. PHÂN TÍCH TÌNH HÌNH HIỆN TẠI</h2>
+            <p class="body-text mb-4">Ngành tôm Việt Nam, đặc biệt là tại Cà Mau và Bạc Liêu, đang đứng trước bước ngoặt chuyển đổi mô hình từ thâm canh truyền thống sang hệ sinh thái giá trị cao:</p>
+            <ul class="list-disc ml-5 body-text space-y-2">
+                <li><strong>Bạc Liêu:</strong> Xác lập vị thế "Thủ phủ tôm công nghệ cao" với hơn 6.000 ha siêu thâm canh. Mô hình nuôi 2-3 giai đoạn trong nhà màng đang trở thành tiêu chuẩn vận hành.</li>
+                <li><strong>Cà Mau:</strong> Phát triển theo mô hình "Lưỡng cực đặc sắc". Một mặt duy trì tốc độ siêu thâm canh, mặt khác bảo vệ thế mạnh độc quyền tôm sinh thái (tôm-rừng, tôm-lúa), hướng tới 418.000 ha vào năm 2030.</li>
+                <li><strong>Hạ tầng công nghệ:</strong> Sự hiện diện của IoT, AI trong quản lý thức ăn và hệ thống tuần hoàn (RAS/Biofloc) đã nâng tỷ lệ sống lên 70-90%.</li>
+            </ul>
+        </section>
+
+        <!-- Section II -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">II. PHÂN TÍCH NGƯ TRƯỜNG & MÔI TRƯỜNG</h2>
+            <div class="grid md:grid-cols-2 gap-6 body-text">
+                <div class="bg-offwhite p-4 border-l-4 border-navy">
+                    <p><strong>Địa chính trị:</strong> EVFTA, CPTPP và RCEP tạo nền tảng thuế quan ưu đãi, đòi hỏi khắt khe về quy tắc xuất xứ.</p>
                 </div>
-                <div class="p-6 bg-white shadow-sm border-l-4 border-blue-600">
-                    <h3 class="text-xl font-bold mb-2">Điểm yếu</h3>
-                    <p class="text-justify">Công nghệ bảo quản lạc hậu, tiêu hao nhiên liệu cao, phụ thuộc thương lái trung gian.</p>
-                </div>
-                <div class="p-6 bg-white shadow-sm border-l-4 border-yellow-600">
-                    <h3 class="text-xl font-bold mb-2">Cơ hội</h3>
-                    <p class="text-justify">Tiêu chuẩn xuất khẩu cao cấp, AI dự báo ngư trường, chuỗi siêu thị hiện đại.</p>
-                </div>
-                <div class="p-6 bg-white shadow-sm border-l-4 border-red-600">
-                    <h3 class="text-xl font-bold mb-2">Thách thức</h3>
-                    <p class="text-justify">Biến động giá dầu, quy định IUU khắt khe, rủi ro thiên tai và thời tiết cực đoan.</p>
+                <div class="bg-offwhite p-4 border-l-4 border-navy">
+                    <p><strong>Môi trường:</strong> Biến đổi khí hậu gây xâm nhập mặn; cơ hội chuyển đổi lúa kém hiệu quả sang nuôi tôm nước mặn/lợ.</p>
                 </div>
             </div>
         </section>
 
-        <!-- AI Solutions -->
-        <section id="solutions" class="section-padding">
-            <h2 class="text-3xl mb-8 navy-text">Giải pháp Công nghệ & AI</h2>
-            <div class="space-y-6">
-                <div class="p-6 border border-gray-200 hover:shadow-lg transition">
-                    <h3 class="text-2xl mb-2 teal-text font-bold">1. Số hóa Ngư trường (AI)</h3>
-                    <p class="text-justify">Trang bị thiết bị dò cá kết hợp AI phân tích dữ liệu vệ tinh. Tiết kiệm 30% thời gian tìm kiếm và lượng dầu tiêu hao.</p>
-                </div>
-                <div class="p-6 border border-gray-200 hover:shadow-lg transition">
-                    <h3 class="text-2xl mb-2 teal-text font-bold">2. Hệ thống Bảo quản PU</h3>
-                    <p class="text-justify">Đầu tư hầm vật liệu Polyurethane và máy làm đá vảy trực tiếp trên tàu. Giữ thịt cá tiêu chuẩn Sashimi cao cấp.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Financial Forecast -->
-        <section id="financial" class="section-padding">
-            <h2 class="text-3xl mb-8 navy-text">Dự toán Ngân sách (Chi tiết đầu tư)</h2>
+        <!-- Section III -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">III. PHÂN TÍCH THỊ TRƯỜNG & TIÊU CHUẨN</h2>
+            <p class="body-text mb-4">Thế giới dịch chuyển sang tiêu dùng trách nhiệm:</p>
             <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="navy-bg text-white">
-                            <th class="p-4">Mục đầu tư</th>
-                            <th class="p-4">Tỷ trọng</th>
-                            <th class="p-4">Ngân sách (VND)</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200">
-                        <tr class="bg-gray-50">
-                            <td class="p-4">Công nghệ bảo quản</td>
-                            <td class="p-4">40%</td>
-                            <td class="p-4">480 - 720 triệu</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4">Giải pháp AI dò cá</td>
-                            <td class="p-4">30%</td>
-                            <td class="p-4">360 - 540 triệu</td>
-                        </tr>
-                        <tr class="bg-gray-50">
-                            <td class="p-4">Quỹ dự phòng & Bảo trì</td>
-                            <td class="p-4">10%</td>
-                            <td class="p-4">120 - 180 triệu</td>
-                        </tr>
+                <table>
+                    <thead><tr><th>Thị trường</th><th>Đặc điểm/Thách thức</th></tr></thead>
+                    <tbody>
+                        <tr><td>Trung Quốc</td><td>Chiếm 45% thị phần; lợi thế logistics.</td></tr>
+                        <tr><td>EU</td><td>CBAM, phúc lợi động vật, chứng chỉ ASC.</td></tr>
+                        <tr><td>Hoa Kỳ</td><td>AD/CVD, kiểm soát gene khắt khe.</td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Roadmap -->
-        <section class="section-padding">
-            <h2 class="text-3xl mb-8 navy-text">Lộ trình 90 Ngày</h2>
-            <div class="relative border-l-2 border-[#006D77] ml-4 pl-8 space-y-12">
-                <div class="relative">
-                    <span class="absolute -left-[45px] top-0 bg-[#006D77] text-white p-2 rounded-full font-bold">01</span>
-                    <h3 class="text-xl font-bold">Tháng 1: Tái cấu trúc</h3>
-                    <p>Thiết lập mô hình "1 Tàu Thu Gom - 5 Tàu Đánh Bắt" và đào tạo nhân sự.</p>
-                </div>
-                <div class="relative">
-                    <span class="absolute -left-[45px] top-0 bg-[#006D77] text-white p-2 rounded-full font-bold">02</span>
-                    <h3 class="text-xl font-bold">Tháng 2: Chuyển đổi số</h3>
-                    <p>Lắp đặt hệ thống AI, phần mềm e-Logbook và cảm biến VMS trên toàn đội tàu.</p>
-                </div>
-                <div class="relative">
-                    <span class="absolute -left-[45px] top-0 bg-[#006D77] text-white p-2 rounded-full font-bold">03</span>
-                    <h3 class="text-xl font-bold">Tháng 3: Vận hành & Thương mại</h3>
-                    <p>Kích hoạt tem truy xuất QR và ký kết hợp đồng với hệ thống siêu thị đối tác.</p>
-                </div>
-            </div>
+        <!-- Section IV -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">IV. ĐÁNH GIÁ TÀI CHÍNH & LỘ TRÌNH ĐẦU TƯ</h2>
+            <p class="body-text">Xuất khẩu đạt mốc 4,6 tỷ USD năm 2025. Đầu tư tập trung vào chế biến sâu và tối ưu hóa hệ số FCR xuống 1.1 để cạnh tranh giá thành với Ecuador.</p>
         </section>
 
-        <!-- Call to Action -->
-        <section class="section-padding text-center border-t border-gray-300">
-            <h2 class="text-3xl navy-text mb-6">Sẵn sàng vươn khơi cùng Công nghệ</h2>
-            <p class="mb-8">Kết nối với chúng tôi để thảo luận chi tiết về chiến lược triển khai.</p>
-            <a href="https://www.phamhoanganhtokens.com" target="_blank" class="px-8 py-4 bg-[#006D77] text-white font-bold hover:bg-[#004f56] transition">THAM KHẢO WEBSITE</a>
+        <!-- Section V -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">V. QUẢN TRỊ RỦI RO</h2>
+            <p class="body-text text-alert font-semibold">Cảnh báo: Dịch bệnh (AHPND, EHP), biến động thương mại và các quy định ESG mới tại EU là rủi ro trọng yếu cần giám sát chặt chẽ.</p>
+        </section>
+
+        <!-- Section VI (Callout) -->
+        <section class="report-section bg-offwhite p-8 border-l-8 border-navy shadow-lg">
+            <h2 class="text-2xl font-bold text-navy mb-6">VI. CHIẾN LƯỢC HÀNH ĐỘNG (ACTION PLAN)</h2>
+            <ul class="space-y-4 body-text">
+                <li class="flex gap-2"><span>•</span> <strong>Chuyển dịch Ma trận:</strong> Tập trung 100% nguồn lực vào phân khúc chế biến sâu.</li>
+                <li class="flex gap-2"><span>•</span> <strong>Xanh hóa:</strong> Lộ trình Net Zero và công nghệ gây ngất điện cho EU.</li>
+                <li class="flex gap-2"><span>•</span> <strong>Số hóa:</strong> Phổ cập IoT/AI tại Bạc Liêu để kiểm soát lãng phí.</li>
+                <li class="flex gap-2"><span>•</span> <strong>Liên kết chuỗi:</strong> Hình thành liên minh tôm sạch từ con giống đến nhà máy.</li>
+            </ul>
+        </section>
+
+        <!-- Section VII -->
+        <section class="report-section">
+            <h2 class="text-xl font-bold text-navy mb-4">VII. KẾT LUẬN & KIẾN NGHỊ CHIẾN LƯỢC</h2>
+            <p class="body-text italic">Sự thành công phụ thuộc vào khả năng tận dụng công nghệ của Bạc Liêu kết hợp với giá trị thương hiệu sinh thái độc bản của Cà Mau. Đây là con đường duy nhất để duy trì tăng trưởng 10% hàng năm.</p>
         </section>
     </main>
 
-    <script>
-        // Progress Bar logic
-        window.onscroll = function() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("progress-bar").style.width = scrolled + "%";
-        };
+    <!-- Footer -->
+    <footer class="mt-16 pt-8 border-t border-gray-200 text-center font-sans text-xs text-gray-400">
+        <p>www.phamhoanganhtokens.com</p>
+        <p class="uppercase mt-2 tracking-widest">Confidential / Institutional Use Only</p>
+    </footer>
 
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
