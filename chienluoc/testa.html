@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Chiến lược AI Thuỷ Hải Sản | Phạm Hoàng Anh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#002147',
+                        teal: '#006D77',
+                        slate: '#708090',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Times New Roman', Georgia, serif; }
+        .text-justify { text-align: justify; }
+        .progress-bar { position: fixed; top: 0; left: 0; height: 4px; background: #006D77; z-index: 100; transition: width 0.2s; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
 
+    <!-- Progress Indicator -->
+    <div id="progress" class="progress-bar w-0"></div>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200 py-4 px-6 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-navy uppercase tracking-widest">AI THUỶ HẢI SẢN</h1>
+        <nav class="hidden md:block text-sm font-semibold text-navy space-x-6">
+            <a href="#summary" class="hover:text-teal transition">Tóm lược</a>
+            <a href="#solutions" class="hover:text-teal transition">Giải pháp</a>
+            <a href="#finance" class="hover:text-teal transition">Tài chính</a>
+            <a href="#roadmap" class="hover:text-teal transition">Lộ trình</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center bg-navy text-white relative px-4">
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&q=80&w=2000');"></div>
+        <div class="relative z-10 text-center max-w-4xl">
+            <h2 class="text-teal font-bold uppercase tracking-[0.2em] mb-4">Chiến lược Cấp cao</h2>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Báo cáo Chiến lược AI Thuỷ Hải Sản</h1>
+            <p class="text-xl mb-12 border-t border-b border-white/20 py-4">Dẫn dắt kỷ nguyên công nghệ trong ngành đánh bắt biển xa</p>
+            <div class="grid grid-cols-2 gap-8 text-sm">
+                <div>
+                    <p class="text-gray-400">Chủ trì chiến lược</p>
+                    <p class="font-bold text-lg">Phạm Hoàng Anh</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Ngày lập báo cáo</p>
+                    <p id="current-date" class="font-bold text-lg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto py-16 px-6 space-y-24">
+        
+        <!-- Executive Summary -->
+        <section id="summary" class="bg-white p-8 shadow-sm border border-gray-100">
+            <h2 class="text-3xl font-bold text-navy mb-6 border-l-4 border-teal pl-4">Tóm lược điều hành</h2>
+            <p class="text-justify leading-relaxed text-lg text-gray-700">
+                Báo cáo này đề xuất kế hoạch tái cấu trúc ngành thuỷ hải sản với tổng ngân sách 15 tỷ VNĐ. Mục tiêu trọng tâm là chuyển đổi số toàn diện thông qua việc áp dụng trí tuệ nhân tạo (AI), nâng cấp hạ tầng chuỗi cung ứng lạnh và chuẩn hóa quy trình xuất khẩu quốc tế nhằm tối ưu hóa lợi nhuận và giảm thiểu rủi ro thẻ vàng IUU.
+            </p>
+        </section>
+
+        <!-- Solutions -->
+        <section id="solutions">
+            <h2 class="text-3xl font-bold text-navy mb-10">Giải pháp Công nghệ & AI</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 border border-gray-200 hover:border-teal transition-all">
+                    <h3 class="font-bold text-navy text-lg mb-2">1. Chuỗi cung ứng lạnh</h3>
+                    <p class="text-justify text-sm">Đầu tư 6 tỷ VNĐ cho hệ thống làm lạnh bằng nước biển và kho đông lạnh nhanh, đảm bảo tiêu chuẩn sashimi.</p>
+                </div>
+                <div class="p-6 border border-gray-200 hover:border-teal transition-all">
+                    <h3 class="font-bold text-navy text-lg mb-2">2. Dự báo Ngư trường AI</h3>
+                    <p class="text-justify text-sm">Ứng dụng dữ liệu vệ tinh và ML để định hướng khu vực đánh bắt, giảm 20% chi phí nhiên liệu.</p>
+                </div>
+                <div class="p-6 border border-gray-200 hover:border-teal transition-all">
+                    <h3 class="font-bold text-navy text-lg mb-2">3. Số hóa quản trị (ERP)</h3>
+                    <p class="text-justify text-sm">Triển khai Cloud-ERP tích hợp Blockchain-lite để minh bạch hóa nguồn gốc "từ biển đến bàn ăn".</p>
+                </div>
+                <div class="p-6 border border-gray-200 hover:border-teal transition-all">
+                    <h3 class="font-bold text-navy text-lg mb-2">4. Tuân thủ quốc tế</h3>
+                    <p class="text-justify text-sm">Đào tạo chuẩn ISO 22000, HACCP và đảm bảo 100% tàu bật hệ thống VMS.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finance -->
+        <section id="finance">
+            <h2 class="text-3xl font-bold text-navy mb-10">Phân bổ Ngân sách (15 Tỷ VNĐ)</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b-2 border-navy text-navy">
+                            <th class="py-4">Hạng mục</th>
+                            <th class="py-4 text-right">Tỷ trọng</th>
+                            <th class="py-4 text-right">Ngân sách</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200"><td class="py-4">Chuỗi cung ứng lạnh & IoT</td><td class="py-4 text-right">40%</td><td class="py-4 text-right">6.0 Tỷ</td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-4">Mở rộng đội tàu</td><td class="py-4 text-right">30%</td><td class="py-4 text-right">4.5 Tỷ</td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-4">Logistics & Hệ thống AI</td><td class="py-4 text-right">13.3%</td><td class="py-4 text-right">2.0 Tỷ</td></tr>
+                        <tr class="border-b border-gray-200"><td class="py-4">Kiểm định & Chứng nhận</td><td class="py-4 text-right">10%</td><td class="py-4 text-right">1.5 Tỷ</td></tr>
+                        <tr class="border-b border-gray-200 font-bold text-navy"><td class="py-4">Dự phòng</td><td class="py-4 text-right">6.7%</td><td class="py-4 text-right">1.0 Tỷ</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section id="roadmap">
+            <h2 class="text-3xl font-bold text-navy mb-10">Lộ trình 90 ngày đầu tiên</h2>
+            <div class="border-l-2 border-teal pl-8 space-y-8">
+                <div class="relative">
+                    <div class="absolute -left-[41px] w-5 h-5 bg-teal rounded-full"></div>
+                    <h4 class="font-bold">Ngày 1 - 30: Đánh giá & Thiết lập</h4>
+                    <p class="text-sm text-justify">Triển khai hệ thống giám sát VMS, kiểm định tàu và bắt đầu đào tạo nhân sự kỹ thuật Ike Jime.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] w-5 h-5 bg-teal rounded-full"></div>
+                    <h4 class="font-bold">Ngày 31 - 60: Chuyển đổi công nghệ</h4>
+                    <p class="text-sm text-justify">Lắp đặt hệ thống làm lạnh nước biển (RSW) và tích hợp các cảm biến IoT lên đội tàu.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] w-5 h-5 bg-teal rounded-full"></div>
+                    <h4 class="font-bold">Ngày 61 - 90: Vận hành & Tối ưu</h4>
+                    <p class="text-sm text-justify">Kích hoạt ERP quản lý chuỗi cung ứng, hoàn thiện hồ sơ HACCP cho lô hàng xuất khẩu đầu tiên.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-16 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="text-2xl font-bold mb-6">Sẵn sàng hợp tác chiến lược?</h3>
+            <p class="mb-8">Kết nối với chúng tôi để xây dựng giá trị bền vững cho ngành Thuỷ Hải Sản.</p>
+            <a href="www.phamhoanganhtokens.com" target="_blank" class="inline-block border border-teal px-8 py-3 hover:bg-teal transition">www.phamhoanganhtokens.com</a>
+            <div class="mt-12 pt-8 border-t border-white/10 text-xs text-gray-500 uppercase tracking-widest italic">
+                Master Strategist - Chiến lược Công nghệ & Đổi mới
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-date').innerText = new Date().toLocaleDateString('vi-VN');
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
