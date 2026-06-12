@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Chiến Lược: AI Thủy Hải Sản</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maritime: '#1a365d',
+                        emerald: '#2f855a',
+                        gold: '#c6a052',
+                        paper: '#fcfcfc',
+                    },
+                    fontFamily: {
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #fcfcfc; color: #2d3748; line-height: 1.6; }
+        .document-container { max-width: 1000px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        h1, h2, h3 { font-family: 'Times New Roman', Times, serif; color: #1a365d; }
+        p { text-align: justify; margin-bottom: 1rem; }
+        .nav-link:hover { color: #c6a052; border-left: 2px solid #c6a052; padding-left: 10px; transition: all 0.3s; }
+        .badge { font-size: 0.7rem; font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+    </style>
+</head>
+<body class="py-10">
+
+    <!-- Sticky Navigation -->
+    <nav class="hidden xl:block fixed left-5 top-20 w-64 p-6 bg-white border border-gray-200 shadow-sm rounded-lg">
+        <h3 class="font-bold mb-4 text-maritime">MỤC LỤC</h3>
+        <ul class="space-y-2 text-sm font-body">
+            <li><a href="#header" class="nav-link block">1. Cover</a></li>
+            <li><a href="#intro" class="nav-link block">2. Giới thiệu</a></li>
+            <li><a href="#analysis" class="nav-link block">3. Tình trạng</a></li>
+            <li><a href="#tech" class="nav-link block">4. Giải pháp Kỹ thuật</a></li>
+            <li><a href="#finance" class="nav-link block">5. Tài chính</a></li>
+            <li><a href="#risk" class="nav-link block">6. Rủi ro</a></li>
+            <li><a href="#logistics" class="nav-link block">7. Logistics</a></li>
+            <li><a href="#policy" class="nav-link block">8. Chính sách</a></li>
+            <li><a href="#swot" class="nav-link block">9. SWOT</a></li>
+            <li><a href="#roadmap" class="nav-link block">10. Lộ trình</a></li>
+            <li><a href="#conclusion" class="nav-link block">11. Kết luận</a></li>
+        </ul>
+    </nav>
+
+    <div class="document-container bg-white p-12 border border-gray-200">
+        
+        <!-- Header -->
+        <header id="header" class="border-b-4 border-maritime pb-10 mb-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-maritime mb-4">BÁO CÁO CHIẾN LƯỢC DỰ ÁN<br>"AI THỦY HẢI SẢN"</h1>
+            <p class="text-xl text-gray-600 font-serif italic">Công ty Thủy Sản Đại Dương</p>
+            <div class="mt-8 flex justify-center gap-8 text-sm font-semibold uppercase tracking-widest text-emerald">
+                <span>Ngân sách: 80 - 120 Tỷ VNĐ</span>
+                <span>Ngư trường: Trường Sa - Hoàng Sa</span>
+            </div>
+        </header>
+
+        <!-- Sections -->
+        <section id="intro" class="py-8">
+            <h2 class="text-2xl font-bold mb-4">1. Tóm tắt điều hành</h2>
+            <p>Dự án "AI Thủy Hải Sản" là chiến lược chuyển đổi số toàn diện nhằm hiện đại hóa hoạt động khai thác cá ngừ của Công ty Thủy Sản Đại Dương. Bằng việc tích hợp các công nghệ tiên phong gồm Trí tuệ nhân tạo (AI), Internet vạn vật (IoT) và Blockchain, dự án giải quyết đồng thời ba bài toán cốt lõi: Tối ưu hóa chi phí vận hành, bảo đảm chất lượng hải sản sau thu hoạch và minh bạch hóa nguồn gốc.</p>
+        </section>
+
+        <section id="tech" class="py-8">
+            <h2 class="text-2xl font-bold mb-4">2. Chiến lược Kỹ thuật</h2>
+            <p>Hệ thống kỹ thuật được xây dựng trên mô hình hội tụ công nghệ 4.0:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>AI Dự báo:</strong> Sử dụng mô hình Ensemble Learning (XGBoost + Random Forest) phân tích vệ tinh.</li>
+                <li><strong>Hạ tầng IoT:</strong> VSAT băng thông rộng và cảm biến chuẩn IP68.</li>
+                <li><strong>Blockchain:</strong> Giao thức Hyperledger Fabric lưu trữ nhật ký khai thác bất biến.</li>
+            </ul>
+        </section>
+
+        <section id="finance" class="py-8">
+            <h2 class="text-2xl font-bold mb-4">3. Kế hoạch Tài chính</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse border border-gray-300 text-sm">
+                    <thead class="bg-maritime text-white">
+                        <tr>
+                            <th class="p-3">Hạng mục</th>
+                            <th class="p-3">Ngân sách (Tỷ VNĐ)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="bg-gray-50"><td>Đầu tư ban đầu (CAPEX)</td><td class="text-right">65</td></tr>
+                        <tr><td>Chi phí vận hành (OPEX)</td><td class="text-right">20</td></tr>
+                        <tr class="bg-gray-50"><td>Dự phòng rủi ro</td><td class="text-right">15</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-xs mt-2 italic text-gray-500">* Nguồn: AI Modeling</p>
+        </section>
+
+        <section id="swot" class="py-8">
+            <h2 class="text-2xl font-bold mb-6">4. Phân tích SWOT</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 border border-emerald/30 bg-emerald/5 rounded">
+                    <h3 class="font-bold text-emerald">Điểm mạnh</h3>
+                    <p class="text-sm">Công nghệ tiên phong, minh bạch hóa Blockchain đạt chuẩn EU.</p>
+                </div>
+                <div class="p-4 border border-gold/30 bg-gold/5 rounded">
+                    <h3 class="font-bold text-gold">Điểm yếu</h3>
+                    <p class="text-sm">Chi phí đầu tư ban đầu lớn, phụ thuộc vào hạ tầng vệ tinh.</p>
+                </div>
+                <div class="p-4 border border-maritime/30 bg-maritime/5 rounded">
+                    <h3 class="font-bold text-maritime">Cơ hội</h3>
+                    <p class="text-sm">Gỡ thẻ vàng IUU, tiếp cận thị trường cao cấp Mỹ/EU.</p>
+                </div>
+                <div class="p-4 border border-red-500/30 bg-red-50 rounded">
+                    <h3 class="font-bold text-red-600">Thách thức</h3>
+                    <p class="text-sm">Biến đổi khí hậu, môi trường biển khắc nghiệt ăn mòn thiết bị.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="py-8">
+            <h2 class="text-2xl font-bold mb-4">5. Lộ trình triển khai</h2>
+            <div class="space-y-6">
+                <div class="relative pl-8 border-l-2 border-maritime">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-maritime rounded-full"></div>
+                    <h4 class="font-bold">Giai đoạn 1 (Tháng 1-4)</h4>
+                    <p>Triển khai thí điểm trên 3 tàu, hoàn thiện mô hình AI dự báo.</p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-gold">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-gold rounded-full"></div>
+                    <h4 class="font-bold">Giai đoạn 2 (Tháng 5-12)</h4>
+                    <p>Nâng cấp hạ tầng vệ tinh 15 tàu, Blockchain & e-Logbook.</p>
+                </div>
+                <div class="relative pl-8 border-l-2 border-emerald">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-emerald rounded-full"></div>
+                    <h4 class="font-bold">Giai đoạn 3 (Tháng 13-24)</h4>
+                    <p>Vận hành toàn diện, kết nối đối tác quốc tế.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-12 pt-8 border-t text-center text-gray-500 text-sm">
+            <p class="font-bold text-maritime">Phạm Hoàng Anh - Master Agent AI Thủy Hải Sản</p>
+            <p>www.phamhoanganhtokens.com</p>
+        </footer>
+    </div>
+</body>
+</html>
